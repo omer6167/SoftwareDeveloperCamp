@@ -4,7 +4,7 @@ using System.Text;
 using HomeworkGameSimulation.Abstract;
 
 namespace HomeworkGameSimulation.Concrete
-{
+{ 
     internal class PlayerManager
     {
         private EDevletValidation _eDevletValidation;

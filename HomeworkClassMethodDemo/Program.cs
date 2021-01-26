@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 
 namespace HomeworkClassMethodDemo
-{
+{ 
     internal class Program
     {
         private static void Main(string[] args)

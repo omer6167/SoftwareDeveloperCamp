@@ -4,7 +4,7 @@ using System.Text;
 using HomeworkGameSimulation.Abstract;
 
 namespace HomeworkGameSimulation.Concrete
-{
+{ 
     internal class SaleManager:ISaleService
     {
         public void Sale(IPlayer player, ICampaign campaign, IGame game)

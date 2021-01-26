@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 
-namespace HomeworkClassMethodDemo
+namespace HomeworkClassMethodDemo  
 {
     internal static class CustomerManager
     { 
-
+          
         public static ObservableCollection<Customer> Add(this ObservableCollection<Customer> observableCustomer, Customer customer)
         {
             observableCustomer.Add(customer);

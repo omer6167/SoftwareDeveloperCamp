@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HomeworkClassMethodDemo
 {
-    internal class Customer
+    internal class Customer  
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
