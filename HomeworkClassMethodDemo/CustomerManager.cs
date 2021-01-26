@@ -12,7 +12,7 @@ namespace HomeworkClassMethodDemo
         {
             observableCustomer.Add(customer);
 
-            return observableCustomer;
+            return observableCustomer; 
         }
 
         public static ObservableCollection<Customer> Update(this ObservableCollection<Customer> observableCustomer, int index, Customer customer)
