@@ -15,7 +15,13 @@ namespace HomeworkGameSimulation
             playerManager.Add(player); 
               
             ISaleService newSale = new SaleManager();
-            newSale.Sale(new Player(),new Campaign(){Duration = new DateTime(2021,10,13),Name = "NewCampaign",Price = 10},new Game(){Id = 1,Name = "NewGame",Price = 100});
+            newSale.Sale(new Player(),new Campaign()
+            {
+                Duration = new DateTime(2021,10,13),Name = "NewCampaign",Price = 10
+            },new Game()
+            {
+                Id = 1,Name = "NewGame",Price = 100
+            });    
 
             ICampaignService campaignService = new CampaignManager();
             campaignService.Add(new Campaign());

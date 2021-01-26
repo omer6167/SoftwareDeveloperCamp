@@ -12,7 +12,7 @@ namespace HomeworkClassMethodDemo
             Customer customer3 = new Customer(id: 3, firstName: "Mister", lastName: "Gentlemen", sex: true);
 
             ObservableCollection<Customer> observable = new ObservableCollection<Customer> {customer,customer2};
-
+               
             
             foreach (var item in observable)
             {

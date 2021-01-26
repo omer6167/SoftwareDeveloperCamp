@@ -10,7 +10,7 @@ namespace HomeworkClassMethodDemo
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public bool Sex { get; set; }
-
+         
         public Customer(int id, string firstName, string lastName, bool sex)
         {
             Id = id;
