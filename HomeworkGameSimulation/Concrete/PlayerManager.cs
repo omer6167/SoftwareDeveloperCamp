@@ -7,16 +7,15 @@ namespace HomeworkGameSimulation.Concrete
 { 
     internal class PlayerManager
     {
-        private EDevletValidation _eDevletValidation;
+        private IValidationService _validationService;
         
-        public PlayerManager()
+        public PlayerManager(IValidationService validationService)
         {
-            
+            _validationService = validationService;
         }
         public void Add(IPlayer player)
         {
-            _eDevletValidation = new EDevletValidation();
-            Console.WriteLine(_eDevletValidation.Validate(player) ? $"{player.FirstName} Added" : "Player is invalid");
+            Console.WriteLine(_validationService.Validate(player) ? $"{player.FirstName} Added" : "Player is invalid");
         }
         public void Update(IPlayer player)
         {
