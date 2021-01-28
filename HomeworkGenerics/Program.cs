@@ -30,6 +30,9 @@ namespace HomeworkGenerics
             DataDictionary<int, string> dataDictionary = new DataDictionary<int, string>(1, "küçük");
             dataDictionary.Add(2,"ömer");
 
+            Console.WriteLine($"second keyitem: {dataDictionary.GetData(keyItem: 2)}");
+            dataDictionary.Delete(1);
+            
             foreach (var item in dataDictionary)
             {
                 Console.WriteLine(item);
