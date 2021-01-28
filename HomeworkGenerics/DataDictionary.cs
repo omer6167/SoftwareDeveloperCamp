@@ -98,6 +98,9 @@ namespace HomeworkGenerics
 
         public void Delete(int index)
         {
+            if (TvalueArray.Length - 1 < index && index < 0)
+                throw new IndexOutOfRangeException("index parameter can't be bigger than List's last index and can't be negative number");
+
             TKey[] tempKeyArray = TkeyArray;
             TValue[] tempValueArray = TvalueArray;
 
